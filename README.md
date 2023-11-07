@@ -1,2 +1,3 @@
 # ChatGPT-assistants
-chatgpt assistants 示例,需要openai库版本1.1.1，配置.env后可直接运行app.py
+chatgpt assistants 简单示例,需要openai库版本1.1.1，上传的文档类型请参考https://platform.openai.com/docs/assistants/tools/supported-files
+配置.env后可直接运行app.py
