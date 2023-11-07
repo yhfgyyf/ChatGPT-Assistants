@@ -46,7 +46,7 @@ print(f"File {upload_file.id} uploaded after {time.time() - start_time:.2f} seco
 file_list = [] #如果已经上传过文件，这里可以直接添加file.id
 file_list.append(upload_file.id)
 
-#2. Create an assistant，可选code_interpreter，retrieval，自定义function，name请自行修改
+#2. Create an assistant，可选code_interpreter，retrieval，自定义function
 assistant = openai.beta.assistants.create(
     name = "AgentGPT",
     instructions = system_message,
