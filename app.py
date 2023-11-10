@@ -112,15 +112,15 @@ for i in message_id_list:
         message_id=i,
         thread_id=thread.id,
     )
-    if i.type == "text":
-        print(i.text.value)
-    elif i.type == "image_file"
-        response = client.files.with_raw_response.retrieve_content(i.image_file.file_id)
-        if response.status_code == 200:
-            content = response.content
-            with open('image.jpg', 'wb') as f:
-                f.write(content)
-                img = Image.open('image.jpg')
-                img.show()
-
+    for j in message.content:
+        if j.type == "text":
+            print(j.text.value)
+        elif j.type == "image_file":
+            response = client.files.with_raw_response.retrieve_content(j.image_file.file_id)
+            if response.status_code == 200:
+                content = response.content
+                with open('image.jpg', 'wb') as f:
+                    f.write(content)
+                    img = Image.open('image.jpg')
+                    img.show()
 
