@@ -1,6 +1,7 @@
 import openai
 import os
 import  time
+from PIL import Image
 from openai import OpenAI
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv())
